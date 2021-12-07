@@ -16,5 +16,23 @@ const stringLength = (string) => {
   return strLength;
 }
 
+const reverseString = (string) => {
+  let splitStr = string.split('');
+  let reverseSplitStr = splitStr.reverse();
+  string = reverseSplitStr.join('');
+  return string;
+}
 
-module.exports = { stringLength }
+class Calculator {
+  add = (a, b) => a + b;
+
+  subtract = (a, b) => a - b;
+
+  divide = (a, b) => a / b;
+
+  multiply = (a, b) => a * b;
+}
+
+const newCalculator = new Calculator();
+
+module.exports = { stringLength, reverseString, newCalculator }
