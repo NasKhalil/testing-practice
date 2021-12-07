@@ -31,10 +31,8 @@ In this task we're going to do things differently:
 
 
 ## Built With
-- HTML
-- CSS
+
 - JAVASCRIPT
-- Webpack
 
 ## Getting Started
 
