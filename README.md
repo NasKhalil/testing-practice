@@ -51,11 +51,11 @@ To get a local copy up and running follow these simple example steps.
 - npm test
 
 ### Prerequisites
--JAVASCRIPT
--Git
--Github
--jest
--ES6
+- JAVASCRIPT
+- Git
+- Github
+- jest
+- ES6
 
 ### Setup
 -None
