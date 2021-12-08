@@ -1,20 +1,20 @@
-const { 
+const {
   stringLength,
   reverseString,
   newCalculator,
-  capitalize
-} = require('./functions.js');
+  capitalize,
+} = require('./functions');
 
 test('string length', () => {
- expect(stringLength('test')).toBe(4);
+  expect(stringLength('test')).toBe(4);
 });
 
 test('string length less than 1', () => {
- expect(() => stringLength('')).toThrowError('does not meet condition: less than 1 caracter');
+  expect(() => stringLength('')).toThrowError('does not meet condition: less than 1 caracter');
 });
 
 test('string length more than 10', () => {
- expect(() => stringLength('blablablabla')).toThrowError('does not meet condition: more than 10 caracters');
+  expect(() => stringLength('blablablabla')).toThrowError('does not meet condition: more than 10 caracters');
 });
 
 test('reversed string:', () => {
@@ -22,7 +22,6 @@ test('reversed string:', () => {
 });
 
 describe('simple calculator', () => {
-
   test('add fucntion', () => {
     expect(newCalculator.add(1, 2)).toEqual(3);
     expect(newCalculator.add(3, 2)).toEqual(5);
@@ -47,7 +46,6 @@ describe('simple calculator', () => {
     expect(newCalculator.multiply(9, 1)).toEqual(9);
   });
 });
-
 
 test('first character capitalized', () => {
   expect(capitalize('khalil')).toBe('Khalil');
